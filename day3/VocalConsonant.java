@@ -1,8 +1,10 @@
+package day3;
+
 import java.util.*;
 
 public class VocalConsonant {
-  public static void main(String[] args) {
-    Scanner input = new Scanner(System.in);
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
         System.out.print("Input String: ");
         String text = input.nextLine().toLowerCase();
         input.close();
@@ -20,5 +22,5 @@ public class VocalConsonant {
         System.out.println("Jumlah Vokal = " + vocalCount);
         System.out.println("Jumlah Konsonan = " + consonantCount);
         System.out.println("Total Karakter = " + text.length());
-  }
+    }
 }
