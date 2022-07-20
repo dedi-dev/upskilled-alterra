@@ -3,51 +3,61 @@ package day5;
 import java.util.Scanner;
 
 public class Abstraction {
+  public static int startOrExit;
+
   public static void main(String[] args) {
-    MyCalculator calculator = new MyCalculator();
     Scanner input = new Scanner(System.in);
+    startOrExitSelect(input);
+    if (startOrExit == 1) {
+      calculator(input);
+    } else {
+      System.out.println("Keluar dari Calculator");
+    }
+    input.close();
+  }
+
+  public static void startOrExitSelect(Scanner input) {
     System.out.println("++++++++++++++++++++CALCULATOR++++++++++++++++++++");
     System.out.println("1: Open Calculator");
     System.out.println("99: Exit");
     System.out.print("Masukkan pilihan Anda: ");
-    int select = input.nextInt();
-    if (select == 99) {
-      System.out.println("Keluar dari Calculator");
-    } else {
-      System.out.println("++++++++++++++++++++CALCULATOR++++++++++++++++++++");
-      System.out.print("Masukkan Value 1 : ");
-      calculator.setValue1(input.nextInt());
-      System.out.print("Masukkan Value 2 : ");
-      calculator.setValue2(input.nextInt());
+    startOrExit = input.nextInt();
+  }
 
-      System.out.println("++++++++++++++++++++CALCULATOR++++++++++++++++++++");
-      System.out.println("Please enter calculation operation:");
-      System.out.println("1. Add Value");
-      System.out.println("2. Sub Value");
-      System.out.println("3. Multiply Value");
-      System.out.println("4. Divide Value");
-      System.out.println("++++++++++++++++++++CALCULATOR++++++++++++++++++++");
-      System.out.print("Pilihan Anda : ");
-      int selectedOperation = input.nextInt();
-      switch (selectedOperation) {
-        case 1:
-          calculator.add();
-          break;
-        case 2:
-          calculator.sub();
-          break;
-        case 3:
-          calculator.multiply();
-          break;
-        case 4:
-          calculator.divide();
-          break;
-        default:
-          System.out.println("Pilihan tidak sesuai");
-          break;
-      }
+  public static void calculator(Scanner input) {
+    MyCalculator calculator = new MyCalculator();
+    System.out.println("++++++++++++++++++++CALCULATOR++++++++++++++++++++");
+    System.out.print("Masukkan Value 1 : ");
+    calculator.setValue1(input.nextInt());
+    System.out.print("Masukkan Value 2 : ");
+    calculator.setValue2(input.nextInt());
+
+    System.out.println("++++++++++++++++++++CALCULATOR++++++++++++++++++++");
+    System.out.println("Please enter calculation operation:");
+    System.out.println("1. Add Value");
+    System.out.println("2. Sub Value");
+    System.out.println("3. Multiply Value");
+    System.out.println("4. Divide Value");
+    System.out.println("++++++++++++++++++++CALCULATOR++++++++++++++++++++");
+    System.out.print("Pilihan Anda : ");
+    int selectedOperation = input.nextInt();
+    switch (selectedOperation) {
+      case 1:
+        calculator.add();
+        break;
+      case 2:
+        calculator.sub();
+        break;
+      case 3:
+        calculator.multiply();
+        break;
+      case 4:
+        calculator.divide();
+        break;
+      default:
+        System.out.println("Pilihan tidak sesuai");
+        break;
     }
-    input.close();
   }
 }
 
