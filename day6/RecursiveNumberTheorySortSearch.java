@@ -19,7 +19,8 @@ public class RecursiveNumberTheorySortSearch {
     mostAppearItem(Arrays.asList("go", "java", "go", "go", "java", "dart"));
 
     System.out.println("Max Buy Product");
-    maxBuyProduct(Arrays.asList(5000, 2000, 1000, 3000), 5000);
+    maxBuyProduct(Arrays.asList(25000, 25000, 10000, 14000), 50000);
+    maxBuyProduct(Arrays.asList(15000, 10000, 12000, 5000, 3000), 30000);
   }
 
   public static int primeX(int n) {
