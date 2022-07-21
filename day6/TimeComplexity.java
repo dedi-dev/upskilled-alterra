@@ -40,19 +40,11 @@ public class TimeComplexity {
         result *= number1;
       }
     } else if (number2 >= 3) {
-      switch (number2 % 2) {
-        case 1:
-          for (int i = 1; i <= number2 / 2; i++) {
-            result *= number1 * number1;
-          }
-          result *= number1;
-          break;
-        default:
-          for (int i = 1; i <= number2 / 2; i++) {
-            result *= number1 * number1;
-          }
-          break;
+      for (int i = 1; i <= number2 / 2; i++) {
+        result *= number1 * number1;
       }
+      if (number2 % 2 == 1)
+        result *= number1;
     }
 
     return result;
