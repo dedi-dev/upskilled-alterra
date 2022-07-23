@@ -51,9 +51,9 @@ public class RecursiveNumberTheorySortSearch {
   }
 
   public static void minMaxNum(List<Integer> listValue) {
-    int min = 0;
+    int min = listValue.get(0);
     int indexMin = 0;
-    int max = 0;
+    int max = listValue.get(0);
     int indexMax = 0;
 
     for (int i = 0; i < listValue.size(); i++) {
