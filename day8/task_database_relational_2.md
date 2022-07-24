@@ -113,5 +113,14 @@
 
 ## 6
 
-![6](./fotoB//Screenshot%20from%202022-07-24%2014-58-08.png)
+![6](./fotoB/Screenshot%20from%202022-07-24%2014-58-08.png)
 ![6](./fotoB/Screenshot%20from%202022-07-24%2014-59-35.png)
+
+## 7
+
+![6](./fotoB/Screenshot%20from%202022-07-24%2016-11-18.png)
+![6](./fotoB/Screenshot%20from%202022-07-24%2016-16-55.png)
+
+## 8
+
+![5](./fotoB/Screenshot%20from%202022-07-24%2016-21-30.png)
