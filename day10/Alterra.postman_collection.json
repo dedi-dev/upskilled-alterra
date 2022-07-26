@@ -1,0 +1,467 @@
+{
+	"info": {
+		"_postman_id": "08798884-6615-4f46-9c4b-9ac1288725f3",
+		"name": "Alterra",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15914036"
+	},
+	"item": [
+		{
+			"name": "API 1 - News API",
+			"item": [
+				{
+					"name": "All articles mentioning Apple from yesterday",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://newsapi.org/v2/everything?q=apple&from=2022-07-25&to=2022-07-25&sortBy=popularity&apiKey=c1a2dcb93a8c4f7a9d9dd7ec0663c1bf",
+							"protocol": "https",
+							"host": [
+								"newsapi",
+								"org"
+							],
+							"path": [
+								"v2",
+								"everything"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "apple"
+								},
+								{
+									"key": "from",
+									"value": "2022-07-25"
+								},
+								{
+									"key": "to",
+									"value": "2022-07-25"
+								},
+								{
+									"key": "sortBy",
+									"value": "popularity"
+								},
+								{
+									"key": "apiKey",
+									"value": "c1a2dcb93a8c4f7a9d9dd7ec0663c1bf"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "All articles about Tesla",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://newsapi.org/v2/everything?q=tesla&from=2022-06-26&sortBy=publishedAt&apiKey=c1a2dcb93a8c4f7a9d9dd7ec0663c1bf",
+							"protocol": "https",
+							"host": [
+								"newsapi",
+								"org"
+							],
+							"path": [
+								"v2",
+								"everything"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "tesla"
+								},
+								{
+									"key": "from",
+									"value": "2022-06-26"
+								},
+								{
+									"key": "sortBy",
+									"value": "publishedAt"
+								},
+								{
+									"key": "apiKey",
+									"value": "c1a2dcb93a8c4f7a9d9dd7ec0663c1bf"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Top business headlines in the US right now",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=c1a2dcb93a8c4f7a9d9dd7ec0663c1bf",
+							"protocol": "https",
+							"host": [
+								"newsapi",
+								"org"
+							],
+							"path": [
+								"v2",
+								"top-headlines"
+							],
+							"query": [
+								{
+									"key": "country",
+									"value": "us"
+								},
+								{
+									"key": "category",
+									"value": "business"
+								},
+								{
+									"key": "apiKey",
+									"value": "c1a2dcb93a8c4f7a9d9dd7ec0663c1bf"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Top headlines from TechCrunch right now",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=c1a2dcb93a8c4f7a9d9dd7ec0663c1bf",
+							"protocol": "https",
+							"host": [
+								"newsapi",
+								"org"
+							],
+							"path": [
+								"v2",
+								"top-headlines"
+							],
+							"query": [
+								{
+									"key": "sources",
+									"value": "techcrunch"
+								},
+								{
+									"key": "apiKey",
+									"value": "c1a2dcb93a8c4f7a9d9dd7ec0663c1bf"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "All articles published by the Wall Street Journal",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://newsapi.org/v2/everything?domains=wsj.com&apiKey=c1a2dcb93a8c4f7a9d9dd7ec0663c1bf",
+							"protocol": "https",
+							"host": [
+								"newsapi",
+								"org"
+							],
+							"path": [
+								"v2",
+								"everything"
+							],
+							"query": [
+								{
+									"key": "domains",
+									"value": "wsj.com"
+								},
+								{
+									"key": "apiKey",
+									"value": "c1a2dcb93a8c4f7a9d9dd7ec0663c1bf"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "API 2 - SWAPI",
+			"item": [
+				{
+					"name": "Get Data Planet",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://swapi.dev/api/planets/2",
+							"protocol": "https",
+							"host": [
+								"swapi",
+								"dev"
+							],
+							"path": [
+								"api",
+								"planets",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Data Films",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://swapi.dev/api/films/",
+							"protocol": "https",
+							"host": [
+								"swapi",
+								"dev"
+							],
+							"path": [
+								"api",
+								"films",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Data People",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://swapi.dev/api/people/",
+							"protocol": "https",
+							"host": [
+								"swapi",
+								"dev"
+							],
+							"path": [
+								"api",
+								"people",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Data Species",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://swapi.dev/api/species/",
+							"protocol": "https",
+							"host": [
+								"swapi",
+								"dev"
+							],
+							"path": [
+								"api",
+								"species",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Data Vehicles",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://swapi.dev/api/vehicles/",
+							"protocol": "https",
+							"host": [
+								"swapi",
+								"dev"
+							],
+							"path": [
+								"api",
+								"vehicles",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "API 3 - From Swagger",
+			"item": [
+				{
+					"name": "Get Client bt ID",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NDkwMDg0NjksIm5iZiI6MTU0OTAwODQ2OSwianRpIjoiODYyMDNkMGMtZDNkOS00NGFjLWFmYjMtMjA5MjIwNWNmYmIzIiwiZXhwIjoxNTQ5MDk0ODY5LCJpZGVudGl0eSI6ImFsdGFyZXN0IiwiZnJlc2giOmZhbHNlLCJ0eXBlIjoiYWNjZXNzIn0.TxuKpwggKLvLe1cv_6N0ktslk5uLT6FkwbMz3Lt2dKc",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://virtserver.swaggerhub.com/sepulsa/RentABook-API/1.0.0/client/1",
+							"protocol": "https",
+							"host": [
+								"virtserver",
+								"swaggerhub",
+								"com"
+							],
+							"path": [
+								"sepulsa",
+								"RentABook-API",
+								"1.0.0",
+								"client",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request Access Token",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://virtserver.swaggerhub.com/sepulsa/RentABook-API/1.0.0/token?client_id=1234&client_secret=SECRET01",
+							"protocol": "https",
+							"host": [
+								"virtserver",
+								"swaggerhub",
+								"com"
+							],
+							"path": [
+								"sepulsa",
+								"RentABook-API",
+								"1.0.0",
+								"token"
+							],
+							"query": [
+								{
+									"key": "client_id",
+									"value": "1234"
+								},
+								{
+									"key": "client_secret",
+									"value": "SECRET01"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add New Client",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"client_id\": 1234,\n  \"client_key\": \"CLIENT01\",\n  \"client_secret\": \"SECRET01\",\n  \"status\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://virtserver.swaggerhub.com/sepulsa/RentABook-API/1.0.0/client",
+							"protocol": "https",
+							"host": [
+								"virtserver",
+								"swaggerhub",
+								"com"
+							],
+							"path": [
+								"sepulsa",
+								"RentABook-API",
+								"1.0.0",
+								"client"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Client",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"client_id\": 1234,\n  \"client_key\": \"CLIENT01\",\n  \"client_secret\": \"SECRET01\",\n  \"status\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://virtserver.swaggerhub.com/sepulsa/RentABook-API/1.0.0/client/1234",
+							"protocol": "https",
+							"host": [
+								"virtserver",
+								"swaggerhub",
+								"com"
+							],
+							"path": [
+								"sepulsa",
+								"RentABook-API",
+								"1.0.0",
+								"client",
+								"1234"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1234",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Client",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://virtserver.swaggerhub.com/sepulsa/RentABook-API/1.0.0/client/1234",
+							"protocol": "https",
+							"host": [
+								"virtserver",
+								"swaggerhub",
+								"com"
+							],
+							"path": [
+								"sepulsa",
+								"RentABook-API",
+								"1.0.0",
+								"client",
+								"1234"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
