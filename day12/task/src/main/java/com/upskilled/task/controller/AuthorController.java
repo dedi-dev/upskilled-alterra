@@ -24,7 +24,7 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class AuthorController {
   @Autowired
-  AuthorService service;
+  private AuthorService service;
 
   @SneakyThrows(Exception.class)
   @PostMapping(path = "/author", produces = MediaType.APPLICATION_JSON_VALUE)

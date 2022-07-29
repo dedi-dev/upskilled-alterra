@@ -24,7 +24,7 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class BookController {
   @Autowired
-  BookService service;
+  private BookService service;
 
   @SneakyThrows(Exception.class)
   @PostMapping(path = "/book", produces = MediaType.APPLICATION_JSON_VALUE)

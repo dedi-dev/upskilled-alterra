@@ -25,7 +25,7 @@ import lombok.SneakyThrows;
 public class AuthorService {
 
   @Autowired
-  AuthorRepository repository;
+  private AuthorRepository repository;
 
   @SneakyThrows(Exception.class)
   public ResponseEntity<Object> create(CreateAuthorDto dto) {
