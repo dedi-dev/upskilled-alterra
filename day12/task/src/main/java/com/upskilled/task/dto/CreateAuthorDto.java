@@ -1,0 +1,13 @@
+package com.upskilled.task.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class CreateAuthorDto {
+  private String firstName;
+  private String lastName;
+}
